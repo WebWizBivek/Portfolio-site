@@ -9,6 +9,8 @@ import Footer from "./components/Footer";
 import AboutMe from "./pages/About";
 import ContactPage from "./pages/Contact";
 import SkillsPage from "./pages/Skills";
+import Education from "./pages/Education";
+import Projects from "./pages/Projects";
 function App() {
   const [loading, setLoading] = useState(true);
   const handleLoadingComplete = () => {
@@ -23,7 +25,9 @@ h-screen"
         <Header />
         <Hero />
         <AboutMe />
+        <Education />
         <SkillsPage />
+        <Projects />
         <ContactPage />
         <Footer />
       </div>

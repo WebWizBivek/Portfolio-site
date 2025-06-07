@@ -35,12 +35,17 @@ const Hero = () => {
               delaySpeed={1500}
             />
           </h1>
+          <h1 className="text-xl">
+            {" "}
+            I design and code beautifully simple things, and I love what I do
+          </h1>
         </div>
       </div>
       <div>
         <img
           src="https://thumbs.dreamstime.com/b/cartoon-character-programmer-working-desk-d-rendered-seated-laptop-computer-378303757.jpg"
-          alt=""
+          alt="Programmer"
+          className=""
         />
       </div>
     </div>
