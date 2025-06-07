@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin 'tailwind-scrollbar';
+@theme {
+  --color-custom: #d1fae5;
+  --color-custom-light: #10b981;
+}
+html {
+  scroll-behavior: smooth;
+}
