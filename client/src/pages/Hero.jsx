@@ -2,19 +2,11 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
-  const handleType = (count) => {
-    console.log(count); // word count
-  };
-
-  const handleDone = () => {
-    console.log(`Done after 5 loops!`);
-  };
-
   return (
     <div className="App h-screen flex items-center justify-center">
       <div>
-        <h1 className="text-4xl md:text-6xl font-bold text-center">
-          Hi , I am Bivek Singha
+        <h1 className="text-4xl md:text-6xl font-poppin font-bold text-center">
+          Hi , I am <p className="text-red-500">Bivek Singha</p>
         </h1>
         <span style={{ color: "red", fontWeight: "bold" }}></span>
         <div>
@@ -35,7 +27,7 @@ const Hero = () => {
               delaySpeed={1500}
             />
           </h1>
-          <h1 className="text-xl">
+          <h1 className="text-xl font-bivek  font-extrabold">
             {" "}
             I design and code beautifully simple things, and I love what I do
           </h1>
@@ -45,7 +37,7 @@ const Hero = () => {
         <img
           src="https://thumbs.dreamstime.com/b/cartoon-character-programmer-working-desk-d-rendered-seated-laptop-computer-378303757.jpg"
           alt="Programmer"
-          className=""
+          className="h-30"
         />
       </div>
     </div>
