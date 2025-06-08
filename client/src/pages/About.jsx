@@ -4,10 +4,10 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="bg-gray-100 dark:bg-gray-900 h-[80vh]  py-16 px-4 sm:px-8"
+      className="bg-gray-100 dark:bg-gray-900 h-[80vh] w-screen  py-16 px-4 sm:px-8"
     >
       {/* <img src="bg.png" alt="" /> */}
-      <div className="max-w-4xl relative left-[10%]">
+      <div className="max-w-4xl relative w-full left-[10%]">
         {" "}
         <h2 className="text-7xl font-extrabold text-gray-800 font-bivek  dark:text-white mb-6">
           About Me
@@ -25,11 +25,11 @@ const AboutMe = () => {
           turning ideas into code.
         </p>
         <p className="mt-4 text-lg text-gray-600 relative left-12 dark:text-gray-300 leading-relaxed">
-          With a background in both development and DevOps, I’ve worked on
-          everything from integrating external APIs like Bharat Connect to
-          deploying real-time applications. Whether it’s building a portfolio, a
-          CRM, or a smart home dashboard, I strive to deliver clean,
-          maintainable code and intuitive UI designs.
+          With a background in development , I’ve worked on everything from
+          integrating external APIs like Bharat Connect to deploying real-time
+          applications. Whether it’s building a portfolio, a CRM, or a smart
+          home dashboard, I strive to deliver clean, maintainable code and
+          intuitive UI designs.
         </p>
       </div>
     </section>

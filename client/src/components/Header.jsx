@@ -5,14 +5,14 @@ const Header = () => {
     <div className="bg-white h-[10vh]  p-4 flex justify-between items-center">
       <div className="font-bold text-xl flex items-center justify-center gap-2">
         {" "}
-        <RxGithubLogo />
+        <RxGithubLogo size={34} />
         WebWizBivek
       </div>
 
       <div>
-        <button className="bg-black text-white rounded-3xl hover:bg-white hover:text-black hover:border-black border-2 transition-all  px-3 py-2 font-semibold">
+        <button className="bg-white  rounded-3xl text-black hover:bg-black hover:text-white border-black border transition-all  px-3 py-2 font-semibold">
           {" "}
-          <a href="#about" className="text-white">
+          <a href="#contact" className="text-black hover:text-white text-base">
             Say Hello{" "}
           </a>{" "}
         </button>

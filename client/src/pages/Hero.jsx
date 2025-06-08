@@ -3,44 +3,48 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
-    <div className="App h-screen flex items-center justify-center">
-      <div>
-        <h1 className="text-4xl md:text-6xl font-poppin font-bold text-center">
-          Hi , I am <p className="text-red-500">Bivek Singha</p>
-        </h1>
-        <span style={{ color: "red", fontWeight: "bold" }}></span>
-        <div>
-          {" "}
-          <h1 className="text-5xl font-semibold text-[#6E07F3]-400">
-            {" "}
+    <>
+      <section className="h-screen w-full bg-white flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-16 gap-10">
+        {/* Left Content */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 max-w-xl">
+          <h1 className="text-4xl md:text-6xl font-bold font-poppin leading-tight">
+            Hi, I am <span className="text-red-500">Bivek Singha</span>
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-bold font-bivek ">
             <Typewriter
               words={[
                 "Full-Stack Developer",
-                "MERN Stack Enthusiast",
+                "Building Scalable Web Apps",
                 "Creative Coder",
+                "Adaptable Problem Solver",
+                "Tech Enthusiast",
               ]}
-              loop={true}
+              loop
               cursor
               cursorStyle="|"
               typeSpeed={80}
               deleteSpeed={50}
               delaySpeed={1500}
             />
-          </h1>
-          <h1 className="text-xl font-bivek  font-extrabold">
-            {" "}
-            I design and code beautifully simple things, and I love what I do
-          </h1>
+          </h2>
+          <p className="text-sm md:text-xl font-bold  text-gray-700">
+            I design and code beautifully simple things, and I love what I do.
+          </p>
         </div>
+
+        {/* Right Image */}
+        <div className="w-60 md:w-80">
+          <img
+            src="https://thumbs.dreamstime.com/b/cartoon-character-programmer-working-desk-d-rendered-seated-laptop-computer-378303757.jpg"
+            alt="Programmer"
+            className="w-full h-auto rounded-xl shadow-lg"
+          />
+        </div>
+      </section>
+      <div className="flex justify-center items-center">
+        <img src="devices.svg" alt="" className="w-[50%]" />
       </div>
-      <div>
-        <img
-          src="https://thumbs.dreamstime.com/b/cartoon-character-programmer-working-desk-d-rendered-seated-laptop-computer-378303757.jpg"
-          alt="Programmer"
-          className="h-30"
-        />
-      </div>
-    </div>
+    </>
   );
 };
 

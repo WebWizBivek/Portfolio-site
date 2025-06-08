@@ -13,7 +13,7 @@ import Education from "./pages/Education";
 import Projects from "./pages/Projects";
 import Gsap from "./Gsap";
 import gsap from "gsap";
-
+// import ParticlesBackground from "../src/components/ParticlesBackground";
 import { useGSAP } from "@gsap/react";
 function App() {
   const [loading, setLoading] = useState(true);
@@ -49,11 +49,10 @@ function App() {
         ref={cursorRef}
         className="cursor bg-pink-500 w-[100px] h-[100px] opacity-30 rounded-full fixed pointer-events-none z-50"
       ></div>
-      <div
-        className="  font-Oswald
-h-screen"
-      >
+
+      <div className="h-screen">
         <Header />
+        {/* <ParticlesBackground /> */}
         <Hero />
         <AboutMe />
         <Education />
